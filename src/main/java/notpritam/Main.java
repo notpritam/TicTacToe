@@ -12,7 +12,6 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner inputScanner = new Scanner(System.in);
         GameController gameControllerInstance = new GameController();
 
         int gameDimension = 3;

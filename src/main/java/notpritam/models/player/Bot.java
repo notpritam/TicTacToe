@@ -8,10 +8,6 @@ public final class Bot extends Player {
         this.botDificultyLevel = botDificultyLevel;
     }
 
-    public BotDificultyLevel getBotDificultyLevel() {
-        return botDificultyLevel;
-    }
-
     public void setBotDificultyLevel(BotDificultyLevel botDificultyLevel) {
         this.botDificultyLevel = botDificultyLevel;
     }
