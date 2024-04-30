@@ -2,7 +2,7 @@ package notpritam.models.game;
 
 import notpritam.exception.InvalidMoveException;
 import notpritam.models.player.Player;
-import notpritam.logic.GameWinLogic;
+import notpritam.logic.GameLogic;
 import notpritam.models.cell.Cell;
 import notpritam.models.cell.CellStatus;
 import notpritam.models.move.Move;
@@ -17,7 +17,7 @@ public final class Game {
     private int currentPlayerIndex;
     private Player winner;
     private GameState state;
-    private GameWinLogic winningAlgorithm;
+    private GameLogic winningAlgorithm;
 
     public Game(int dimension, List<Player> players) {
         this.board = new Board(dimension);
@@ -25,7 +25,7 @@ public final class Game {
         this.currentPlayerIndex = 0;
         this.state = GameState.IN_PROGRESS;
         this.moves = new ArrayList<>();
-        winningAlgorithm = new GameWinLogic();
+        winningAlgorithm = new GameLogic();
     }
 
     public int getCurrentPlayerIndex() {

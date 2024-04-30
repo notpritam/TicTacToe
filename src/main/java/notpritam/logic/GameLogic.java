@@ -6,7 +6,7 @@ import notpritam.models.move.Move;
 import java.util.HashMap;
 import java.util.Map;
 
-public class GameWinLogic {
+public class GameLogic {
 
     Map<Integer, Map<Character, Long>> rowSymbolCounts = new HashMap<>();
     Map<Integer, Map<Character, Long>> columnSymbolCounts = new HashMap<>();
